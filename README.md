@@ -5,11 +5,13 @@ This is intended to be contributed to Jalarms so it is provided under the same L
 I've also created a patch for the jalarms Ant build so that the _build-base_ target will skip this channel (as it has an external dependency).
 
 **NagiosPassiveCheckChannel** requires the following settings:
+
 - settings - com.googlecode.jsendnsca.NagiosSettings
 - hostname - this is the hostname as configured in Opsview
 - sources - a map of Jalarms source names to Opsview service check names (to allow for multiple jalarm channels).
 
 **Runtime dependencies**
+
 - jsendnsca-2.0.1.jar
 - as per Jalarms (see <https://jalarms.svn.sourceforge.net/svnroot/jalarms/eclipse-project/lib/jarlist.txt>)
 
