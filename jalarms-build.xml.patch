@@ -1,0 +1,13 @@
+Index: build.xml
+===================================================================
+--- build.xml	(revision 59)
++++ build.xml	(working copy)
+@@ -6,7 +6,7 @@
+ 
+ <target name="build-base">
+ 	<mkdir dir="eclipse-project/bin" />
+-	<javac srcdir="eclipse-project/src" destdir="eclipse-project/bin" source="1.5" excludes="com/solab/alarms/channels/MailChannel.java,com/solab/alarms/channels/MsnChannel.java,com/solab/alarms/channels/SmppChannel.java,com/solab/alarms/aop/*">
++	<javac srcdir="eclipse-project/src" destdir="eclipse-project/bin" source="1.5" excludes="com/solab/alarms/channels/MailChannel.java,com/solab/alarms/channels/MsnChannel.java,com/solab/alarms/channels/SmppChannel.java,com/solab/alarms/aop/*,com/solab/alarms/channels/NagiosPassiveCheckChannel.java">
+ 		<classpath>
+ 			<fileset dir="eclipse-project/lib" includes="slf4j-api-*.jar" />
+ 		</classpath>
